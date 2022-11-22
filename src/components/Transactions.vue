@@ -10,6 +10,7 @@
         <th>Category</th>
         <th>Memo</th>
         <th>Amount</th>
+        <th>Cleared</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
         <td>{{transaction.category_name}}</td>
         <td>{{transaction.memo}}</td>
         <td>{{convertMilliUnitsToCurrencyAmount(transaction.amount).toFixed(2)}}</td>
+        <td>{{transaction.cleared}}</td>
       </tr>
     </tbody>
     </table>
